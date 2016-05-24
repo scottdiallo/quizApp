@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Patriot Game</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-image">
+            <header>How Well Do You Know The U.S.A?</header>
+            <section class="intro-section" style="display: block">
+                <h2 class="text"> Are You A True American?</h2>
+                <p class="text">If So, Let's Find Out Now!</p>
+                <p>Are You Ready?</p>
+                <button id="startQuiz">Begin Quiz</button>
+            </section>
+
+            <section class="quiz-section">
+                <div class="quiz-questions">
+                    <h3 id="questions-num"> Questions 1 of 10</h3>
+                    <h2 id="question">What is the longest river in the U.S</h2>
+                    <div class="quiz-options">
+
+                    </div>
+                    <button id="submit-answer">Next</button>
+                </div>
+            </section>
+
+            <section class="result-section" style="display: none;">
+                <h2 class="congrats">Good Job completing your patriotic quiz!</h2>
+                <h2 id="show-score">Your score is 1 / 10</h2>
+                <button id="startQuiz">Try Again!</button>
+                <!--<div id="resultFeedback"></div>-->
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="javaScript/app.js" charset="utf-8"></script>
+</body>
+
+</html>
