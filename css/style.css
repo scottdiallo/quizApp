@@ -38,7 +38,7 @@ header {
     padding: 2rem;
     border-radius: 10px;
     min-height: 300px;
-    width: 32.6rem;
+    width: 36rem;
     margin: 0 auto;
     background-size: cover;
     line-height: 2.5rem;
@@ -81,4 +81,16 @@ header {
 
 .choices {
     margin-right: 1rem;
+}
+
+
+/*
+.result-section p {
+    color: white;
+}
+*/
+
+span {
+    font-weight: bold;
+    font-size: 1.3em;
 }

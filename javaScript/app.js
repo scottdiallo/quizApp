@@ -1,15 +1,15 @@
 'use strict'
 // build  append detail functionality && and some animations for coolness
-var questionsDetail = {
-    firstQdetail: 'Missouri river is 2341 miles long which makes it the longest in the U.S',
-    secondQdetail: 'Minesota river is 2341 miles long which makes it the longest in the U.S',
+//var questionsDetail = [{
+//        firstQdetail: 'Missouri river is 2341 miles long which makes it the longest in the U.S',
+//        secondQdetail: 'Minesota river is 2341 miles long which makes it the longest in the U.S',
+//
+//        detailSection: function () {
+//            return questionsDetail;
+//        }
+//}
 
-    detailSection: function () {
-        return questionsDetail;
-    }
-}
-alert(questionsDetail.detailSection());
-
+//alert(questionsDetail.firstQdetail);
 $(document).ready(function () {
 
 
@@ -27,28 +27,24 @@ $(document).ready(function () {
             question: "What's the longest river in the U.S ?",
             choices: ['Mississipi River', 'Missouri River', 'Rio Grande'],
             answer: 1,
-            detail: 'Missouri river is 2341 miles long which makes it the longest in the U.S'
         },
     // question_2
         {
             question: 'Who among these famous people made the most impact in the world ?',
             choices: ['Steve Jobs', 'Nicholas Tesla', 'Scott Maserati', 'Elvis Paisley'],
             answer: 0,
-            detail: 'Steve Jobs founder of Apple built the most powerful company to date, he changed the way we communicate and listen to music, he changed our lives'
     },
     //question_3
         {
             question: 'Which U.S President promise the Americans public that we will go to the moon?',
             choices: ['Franklin D Roosevelt', 'Abraham Lincoln', 'Jimmy Carter', 'John F Kennedy'],
             answer: 3,
-            detail: 'lorem ipsum'
     },
     //question_4
         {
             question: 'There was like a Uber like in the 1914, which was it?',
             choices: ['Jitney Bus', 'ouwBer', 'takeMethere', 'TaxiNow'],
             answer: 0,
-            detail: 'Created by LP Draper in 1914 a car salesman but tight regulations influenced by lobbyist it vanish.'
         },
     //question_5
         {
@@ -157,6 +153,7 @@ $(document).ready(function () {
         $('.intro-section').show();
         $('.quiz-section').hide();
         $('.result-section').hide();
+        ('.detail-section').show();
         questionNum = 0;
         correctAnswerTotal = 0;
     });
