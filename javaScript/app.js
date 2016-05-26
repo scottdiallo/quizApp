@@ -10,6 +10,8 @@
 //}
 
 //alert(questionsDetail.firstQdetail);
+
+// Make app mobile friendly and add some animation to make it cool
 $(document).ready(function () {
 
 
