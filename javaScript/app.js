@@ -1,17 +1,5 @@
 'use strict'
-// build  append detail functionality && and some animations for coolness
-//var questionsDetail = [{
-//        firstQdetail: 'Missouri river is 2341 miles long which makes it the longest in the U.S',
-//        secondQdetail: 'Minesota river is 2341 miles long which makes it the longest in the U.S',
-//
-//        detailSection: function () {
-//            return questionsDetail;
-//        }
-//}
 
-//alert(questionsDetail.firstQdetail);
-
-// Make app mobile friendly and add some animation to make it cool
 $(document).ready(function () {
 
 

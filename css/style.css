@@ -102,26 +102,32 @@ span {
         Mobile responsiveness
 -----------------------------------------*/
 
-@media (max-width: 600px) {
-    /*any screen less than 600px apply below rules*/
-    /*
+
+/* iPhone 5 && 5s Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     header {
-        font-size: 40px;
-        margin-bottom: 50px;
-        line-height: 5rem;
+        font-size: 3em;
+        line-height: 55px;
+        margin-bottom: 20px;
     }
-    .container {
-        width: 100%;
+    .quiz-options {
+        text-align: left;
+        width: auto;
+        margin-left: 40px;
+        color: cyan
     }
-*/
 }
 
 
-/*--------------------------------------------
-    iPhone 5 && 5s // similar screen sizes
-----------------------------------------------*/
+/* Landscape */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     header {
         font-size: 40px;
         margin-bottom: 50px;
@@ -134,13 +140,4 @@ span {
     .container {
         width: 100%;
     }
-    ;
 }
-
-
-/* this is for iphone // 320px screen portrait
-.quiz-options {
-width: 100%;
-text-align: left;
-margin-left: 20%;
-}*/
