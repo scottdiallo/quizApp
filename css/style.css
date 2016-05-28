@@ -27,8 +27,6 @@ header {
     margin-bottom: 100px;
     margin-top: 15px;
     opacity: 0.7;
-    /*    min-height: 100%;
-    */
 }
 
 .container {
@@ -79,6 +77,7 @@ header {
     text-align: left;
     width: 40%;
     margin: 0 auto;
+    font-size: 1rem
 }
 
 .choices {
@@ -98,103 +97,29 @@ span {
 }
 
 
-/*----------------------------------------
-        Mobile responsiveness
------------------------------------------*/
+/* desktop first approach = (the website was built initialy for desktop and will be adapted for mobiles)
+Even if this approach requires more work in the long run, it is used often in order to develop and Minimum Voable Product with the least amount of initial investment
+*/
 
 
-/* iPhone 5 && 5s Portrait and Landscape */
+/*ipad lanscape / small laptop*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    header {
-        font-size: 3em;
-        line-height: 55px;
-        margin-bottom: 20px;
-        color: white
-    }
-    .quiz-options {
-        text-align: left;
-        width: auto;
-        margin-left: 40px;
-    }
+@media only screen and (max-width: 1024px) {
+    /* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
+    for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
+    */
 }
 
 
-/* Landscape */
+/*ipad potrait*/
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    header {
-        font-size: 40px;
-        margin-bottom: 50px;
-        line-height: 4rem;
-        color: white;
-    }
-    .intro-section {
-        line-height: 3rem;
-    }
-    .container {
-        width: 100%;
-    }
-}
-
-
-/* ----------- iPhone 6 ----------- */
-
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
-
-
-/* Portrait */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    header {
-        font-size: 3em;
-        line-height: 55px;
-        margin-bottom: 20px;
-        color: white
-    }
-    .intro-section p {
-        line-height: 3rem;
-    }
-    .quiz-options {
-        text-align: left;
-        width: auto;
-        margin-left: 40px;
-        font-size: 1.8em
-    }
-    #questions-num {
-        font-size: 2em
-    }
-    .quiz-section {
-        padding: 1em;
-    }
-    .result-section {
-        background-color: black;
-        line-height: 1.5rem;
-        padding: 2rem;
-        border-radius: 10px;
-        max-width: 600px;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
-
-
-/* Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (max-width: 768px) {
     header {
         color: white;
         line-height: 5rem;
         letter-spacing: .25rem;
         margin-bottom: 0px;
+        font-size: 4rem;
     }
     #start-quiz {
         margin-bottom: 10px;
@@ -203,4 +128,29 @@ span {
         padding-bottom: 2rem;
         margin-bottom: 10px
     }
+    .quiz-options {
+        font-size: 0.9rem
+    }
 }
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 3em;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+    .quiz-options {
+        text-align: left;
+        width: auto;
+        margin-left: 40px;
+        font-size: 0.8rem
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {}
