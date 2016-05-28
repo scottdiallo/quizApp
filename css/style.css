@@ -121,7 +121,6 @@ span {
         text-align: left;
         width: auto;
         margin-left: 40px;
-        color: cyan
     }
 }
 
@@ -140,5 +139,68 @@ span {
     }
     .container {
         width: 100%;
+    }
+}
+
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    header {
+        font-size: 3em;
+        line-height: 55px;
+        margin-bottom: 20px;
+        color: white
+    }
+    .intro-section p {
+        line-height: 3rem;
+    }
+    .quiz-options {
+        text-align: left;
+        width: auto;
+        margin-left: 40px;
+        font-size: 1.8em
+    }
+    #questions-num {
+        font-size: 2em
+    }
+    .quiz-section {
+        padding: 1em;
+    }
+    .result-section {
+        background-color: black;
+        line-height: 1.5rem;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    header {
+        color: white;
+        line-height: 5rem;
+        letter-spacing: .25rem;
+        margin-bottom: 0px;
+    }
+    #start-quiz {
+        margin-bottom: 10px;
+    }
+    .intro-section {
+        padding-bottom: 2rem;
+        margin-bottom: 10px
     }
 }
