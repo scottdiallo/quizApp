@@ -4,14 +4,15 @@ $(document).ready(function () {
 
 
     // hide both quiz-section and result-section on page load
-    $('.quiz-section').hide();
+    $('.quiz-section').hide(); //VIEW 7 && 8
     $('.result-section').hide();
 
     //    //Global variables declarations
 
     //
     //    //populate questionnaires
-    var questions = [
+
+    var questions = [ // MODEL   15 - 85
     //question_1
         {
             question: "What's the longest river in the U.S ?",
@@ -84,19 +85,19 @@ $(document).ready(function () {
     var correctAnswerTotal = 0;
 
     // hide quiz and results section on page load
-    $('.quiz-section').hide();
-    $('.result-section').hide();
+    $('.quiz-section').hide(); //VIEW
+    $('.result-section').hide(); //VIEW
 
     // On start Quiz
     $('#startQuiz').on('click', function () {
-        $('.intro-section').hide();
-        $('.result-section').hide();
-        $('.quiz-section').show();
+        $('.intro-section').hide(); //VIEW
+        $('.result-section').hide(); //VIEW
+        $('.quiz-section').show(); //VIEW
         displayQuestions();
     });
 
 
-    $('#submit-answer').on('click', function () {
+    $('#submit-answer').on('click', function () { // CONTROLLER 100 -111
         var userAnswer = $('input[id="choices"]:checked').val();
         //        console.log(userAnswer);
         var correctAnswer = questions[questionNum].answer;
@@ -108,13 +109,13 @@ $(document).ready(function () {
             }
             //function to check if last question is being attempted
             if ((questionNum + 1) == questionTotal) {
-                $('.result-section').show();
+                $('.result-section').show(); // VIEW  112 - 116
                 $('#show-score').text('Your Score is ' + correctAnswerTotal + ' out of ' + questionTotal + '.');
                 $('#startQuiz').show();
                 $('.quiz-section').hide();
                 $('.intro-section').hide();
             } else {
-                questionNum++;
+                questionNum++; // CONTROLLER 111-123
                 displayQuestions();
             }
         } else {
@@ -126,9 +127,9 @@ $(document).ready(function () {
     //function to display quiz questions
     function displayQuestions() {
         //        alert(questionNum);
-        $('#questions-num').text('Question ' + (questionNum + 1) + ' of ' + questionTotal);
-        $('#question').text(questions[questionNum].question);
-        $('.quiz-options').empty();
+        $('#questions-num').text('Question ' + (questionNum + 1) + ' of ' + questionTotal); // CONTROLLER
+        $('#question').text(questions[questionNum].question); //VIEW
+        $('.quiz-options').empty(); // 132 - 140
         var optionsTotal = questions[questionNum].choices.length;
         for (var i = 0; i < optionsTotal; i++) {
             $('.quiz-options').append('<input type="radio" id="choices" class="choices" name="choices" value=' + i + '>' + questions[questionNum].choices[i] + '<br>');
@@ -136,13 +137,12 @@ $(document).ready(function () {
     }
 
     //function to navigate back from result screen to intro screen
-    $('.result-section').on('click', '#startQuiz', function () {
+    $('.result-section').on('click', '#startQuiz', function () { // VIEW 140 -144
         $('.intro-section').show();
         $('.quiz-section').hide();
         $('.result-section').hide();
         ('.detail-section').show();
-        questionNum = 0;
+        questionNum = 0; //CONTROLLER 145 -146
         correctAnswerTotal = 0;
     });
 });
-//testing
