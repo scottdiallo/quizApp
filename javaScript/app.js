@@ -32,7 +32,7 @@ $(document).ready(function () {
         },
         //question_4
         {
-            question: 'There was like a Uber like in the 1914, which was it?',
+            question: 'There was a company like Uber in 1914, which was it?',
             choices: ['Jitney Bus', 'ouwBer', 'takeMethere', 'TaxiNow'],
             answer: 0,
         },
@@ -52,13 +52,13 @@ $(document).ready(function () {
         },
         //question_7
         {
-            question: 'Louisiana purchased from France in 18xx, which state was sold to U.S in 1867 from who?',
+            question: 'Louisiana was purchased from France in 1803, which state was sold to U.S in 1867 and from who?',
             choices: ['Alaska from Russia', 'New York from England', 'Maine from Canada', 'Texas from Mexico'],
             answer: 0,
         },
         //question_8
         {
-            question: 'Which American company has more operating cash the the us treasury?',
+            question: 'Which American company has more operating cash the the U.S treasury?',
             choices: ['Google', 'Tesla', 'Apple', 'Microsoft'],
             answer: 2,
         },
