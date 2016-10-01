@@ -1,0 +1,17 @@
+{
+  "name": "npm-jquery",
+  "version": "1.0.0",
+  "description": "jquery as dependency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "Scott Diallo",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
